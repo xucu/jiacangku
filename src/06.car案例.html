@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 动画</title>
+    <style>
+
+    body {
+        height: 1000px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .car {
+        width: 240px;
+        position: absolute;
+        top: 50%;
+        transform: translate(100px);
+        animation: run 2s forwards;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    @keyframes run {
+        0% {}
+        15% {
+            transform: translate(0px) skew(30deg);
+        }
+        90% {
+            transform: translate(800px) skew(-20deg);
+        }
+        100% {
+            transform: translate(800px) skew(0deg);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="car">
+        <img src="../images/car.jpg" alt="">
+    </div>
+</body>
+
+</html>
